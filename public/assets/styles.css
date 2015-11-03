@@ -17,6 +17,7 @@ html, body {
 }
 #validator h2 {
   margin: 0;
+  margin-bottom: 15px;
   font-size: 18px;
 }
 #main-left {
@@ -28,10 +29,7 @@ html, body {
   padding: 6px;
 }
 
-#validate-url, #validate-json {
-  width: 100%;
-  margin-top: 10px;
-  border: 1px #ccc solid;
+#validator {
 }
 
 footer {
