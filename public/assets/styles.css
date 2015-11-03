@@ -1,0 +1,51 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background-color: #feded0;
+}
+#header h1 {
+  margin: 0;
+  padding: 16px;
+}
+#validator {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+}
+#validator h2 {
+  margin: 0;
+  font-size: 18px;
+}
+#main-left {
+  width: 50%;
+  padding: 6px;
+}
+#main-right {
+  width: 50%;
+  padding: 6px;
+}
+
+#validate-url, #validate-json {
+  width: 100%;
+  margin-top: 10px;
+  border: 1px #ccc solid;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: right;
+  background-color: #feded0;
+  padding: 16px;
+}
+footer a {
+  color: #900000;
+}
+footer a:hover {
+  color: #c00000;
+}
