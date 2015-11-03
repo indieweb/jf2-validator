@@ -14,7 +14,7 @@
       <div class="form-group">
         <textarea class="form-control" id="validate-json" placeholder="Enter your jf2 JSON here"></textarea>
       </div>
-      <button type="submit" class="btn btn-default">Validate</button>
+      <button type="submit" class="btn btn-default" id="validate-submit">Validate</button>
     </form>
   </div>
   <div id="main-right">
