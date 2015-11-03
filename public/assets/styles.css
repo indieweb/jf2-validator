@@ -3,6 +3,15 @@ html, body {
   padding: 0;
 }
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+#page-content {
+  flex: 1;
+}
+
 #header {
   background-color: #feded0;
 }
@@ -10,22 +19,22 @@ html, body {
   margin: 0;
   padding: 16px;
 }
-#validator {
-  width: 100%;
-  padding: 10px;
-  display: flex;
-}
 #validator h2 {
   margin: 0;
   margin-bottom: 15px;
   font-size: 18px;
 }
+#validator {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+}
 #main-left {
-  width: 50%;
+  width: 35%;
   padding: 6px;
 }
 #main-right {
-  width: 50%;
+  width: 65%;
   padding: 6px;
 }
 
@@ -33,7 +42,6 @@ html, body {
 }
 
 footer {
-  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;

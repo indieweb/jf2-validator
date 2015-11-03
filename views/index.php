@@ -9,7 +9,7 @@
     <h2>Input</h2>
     <form>
       <div class="form-group">
-        <input class="form-control" id="validate-url" type="url" placeholder="Enter jf2 URL">
+        <input class="form-control" id="validate-url" type="url" value="<?= $url ?>" placeholder="Enter jf2 URL">
       </div>
       <div class="form-group">
         <textarea class="form-control" id="validate-json" placeholder="Enter your jf2 JSON here"></textarea>

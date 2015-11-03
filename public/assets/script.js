@@ -1,5 +1,6 @@
 $(function(){
   $("#validate-submit").click(function(){
+    history.pushState({}, '', '/?url='+encodeURIComponent($("#validate-url").val()));
     $.post('/validate', {
       url: $("#validate-url").val(),
       json: $("#validate-json").val()
@@ -10,4 +11,8 @@ $(function(){
     });
     return false;
   });
+
+  if($("#validate-url").val() != '') {
+    $("#validate-submit").click();
+  }
 });

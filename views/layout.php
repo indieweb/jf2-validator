@@ -11,7 +11,9 @@
 </head>
 <body>
 
-<?= $this->section('content') ?>
+<div id="page-content">
+  <?= $this->section('content') ?>
+</div>
 
 <footer>
   <a href="http://microformats.org/wiki/jf2">what is jf2?</a>
