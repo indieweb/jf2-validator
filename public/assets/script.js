@@ -8,6 +8,7 @@ $(function(){
       console.log(response);
 
       $("#validate-results").html(response.html);
+      $("#validate-json").val(response.json);
     });
     return false;
   });

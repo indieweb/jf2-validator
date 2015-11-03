@@ -24,6 +24,9 @@ $router->addRoute('POST', '/validate', function(Request $request, Response $resp
     curl_setopt($ch, CURLOPT_TIMEOUT, 3);
     curl_setopt($ch, CURLOPT_REFERER, $referralURL);
     $json = curl_exec($ch);
+
+    // TODO: catch SSL and other HTTP errors and return good error messages
+
   } else {
     $json = $request->get('json');
   }
@@ -33,7 +36,7 @@ $router->addRoute('POST', '/validate', function(Request $request, Response $resp
 
     if($input !== null) {
 
-      $html = '<pre>'.htmlspecialchars(json_encode($input,JSON_PRETTY_PRINT)).'</pre>';
+      $html = '<p>hello</p>';
 
     } else {
       $html = '<b>invalid json</b>';
@@ -43,6 +46,7 @@ $router->addRoute('POST', '/validate', function(Request $request, Response $resp
   }
 
   $response->setContent(json_encode([
+    'json' => $json,
     'html' => $html
   ]));
   $response->headers->set('Content-Type', 'application/json');

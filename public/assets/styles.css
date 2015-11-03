@@ -21,8 +21,10 @@ body {
 }
 #validator h2 {
   margin: 0;
-  margin-bottom: 15px;
   font-size: 18px;
+}
+#validator h2, #validator button {
+  margin-bottom: 15px;
 }
 #validator {
   width: 100%;
@@ -30,15 +32,26 @@ body {
   display: flex;
 }
 #main-left {
-  width: 35%;
+  width: 50%;
   padding: 6px;
 }
 #main-right {
-  width: 65%;
+  width: 50%;
   padding: 6px;
 }
 
-#validator {
+#main-right pre {
+  white-space: pre;
+  word-wrap: normal;
+  overflow: auto;
+}
+
+#validate-json {
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  font-size: 13px;
+  white-space: pre;
+  word-wrap: normal;
+  height: calc(100vh - 300px);
 }
 
 footer {
